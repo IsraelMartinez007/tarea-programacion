@@ -21,14 +21,14 @@
         </thead>
 
         <tbody>
+            @foreach($libros as $libro)
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>{{$libro->id}}</td>
+                <td>{{$libro->titulo}}</td>
+                <td>{{$libro->numedicion}}</td>
+                <td>{{$libro->numejemplar}}</td>
             </tr>
+            @endforeach
         </tbody>
     </table>
 </body>
