@@ -12,11 +12,10 @@
         <thead>
             <tr>
                 <th>id</th>
-                <th>Nombre</th>
-                <th>Direccion</th>
-                <th>Telefono</th>
-                <th>Correo</th>
-                <th>Pais</th>
+                <th>Editorial</th>
+                <th>Titulo</th>
+                <th>Numero de Edicion</th>
+                <th>Numero de Ejemplar</th>
             </tr>
         </thead>
 
@@ -24,6 +23,7 @@
             @foreach($libros as $libro)
             <tr>
                 <td>{{$libro->id}}</td>
+                <td>{{$libro->id_editorial}}</td>
                 <td>{{$libro->titulo}}</td>
                 <td>{{$libro->numedicion}}</td>
                 <td>{{$libro->numejemplar}}</td>
